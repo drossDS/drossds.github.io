@@ -184,20 +184,6 @@ address {
   line-height: inherit;
 }
 
-/*
-I"M ADDING THIS STUFF HERE
-*/
-
-li {
-  text-indent: 0px;
-}
-
-/*
-END OF STUFF I ADDED
-*/
-
-
-
 ol,
 ul {
   padding-left: 2rem;

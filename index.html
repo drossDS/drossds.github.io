@@ -287,8 +287,42 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Home Price Estimator for Ames, Iowa</h3>
-                            <p>Built a linear regression model to predict the price of homes in Ames, Iowa based on home and property characteristics. Engineered interaction and polynomial features to increase model accuracy. The best model achieved an R-Squared value of 0.89 and was able to predict home prices within a mean absolute error of $18,643, and a root mean squared error of $25,887 on testing data.</p>
+                            <br>
+                            <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/resid_v_saleprice.png" width="500/">
+                            <p>Built a linear regression model to predict the price of homes in Ames, Iowa based on home and property characteristics. Engineered interaction and polynomial features to increase model accuracy. The best model achieved an R-Squared value of 0.89 and was able to predict home prices within a mean absolute error of $18,643 and a root mean squared error of $25,887 on testing data.</p>
                             <a href="https://github.com/drossDS/Ames_Iowa_Home_Price_Estimator">Click here to see the code!</a>
+                            <br><br>
+                            <details>
+                                <summary>
+                                    <b><u>...Or click here to expand a brief summary!</u></b>
+                                </summary>
+                                <br>
+                                <div class="subheading mb-3">Key Accomplishments</div>
+                                <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/correlation_matrix.jpg" width="400/">
+                                <ul>
+                                    <li>
+                                        Features were selected based both on their correlations to the home price and common knowledge of important home characteristics that would influence the sale price or value.
+                                    </li>
+                                    <li>
+                                        Different sets of features were run through a linear regression model to find sets of features which would produce the best model performance.
+                                    </li>
+                                    <li>
+                                        Interaction terms and polynomial feature transforms were created and included in the prediction model based on their correlations to price.
+                                    </li>
+                                    <li>
+                                        Regularization techniques were attempted to improve model performance.
+                                    </li>
+                                </ul>
+                                <div class="subheading mb-3">Key Outcomes</div>
+                                <ul>
+                                    <li>
+                                        The final model that was selected was trained on a dataset which included polynomial features with a mean absolute error of $18,643, well within the $30,000 goal and an improvement on the null model RMSE of $78,827.
+                                    </li>
+                                    <li>
+                                        Regularization methods produced a slight reduction in model performance with increases in the RMSE below or around 1% of the RMSE from the non-regularized model.
+                                    </li>
+                                </ul>
+                            </details>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">

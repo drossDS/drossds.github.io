@@ -52,6 +52,7 @@
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/dan-rossetti/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/drossDS"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="mailto:drossetti12@gmail.com" title="Email Me"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
             </section>
@@ -153,11 +154,56 @@
                     <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Boston Airbnb Fair Pricing Tool and Recommender</h3>
+                            <h3 class="mb-0"><u>Boston Airbnb Fair Pricing Tool and Recommender</u></h3>
                             <br>
                             <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/best_model_outliers_removed.png" width="400/">
                             <p>Developed a machine learning pricing model with integrated recommender system to estimate Boston Airbnb listing prices based on user inputs.  Pricing model achieved a root mean squared error of $49 and R-Squared value of 0.68 on validation data.</p>
                             <a href="https://github.com/drossDS/Air_BnB_Fair_Pricing_Improved">Click here to see the code!</a>
+                            <br><br>
+                            <!-- Source:  https://dev.to/jordanfinners/creating-a-collapsible-section-with-nothing-but-html-4ip9-->
+                            <details>
+                                <summary>
+                                    ...Or Click Here to Expand a Brief Summary!
+                                </summary>
+                                <br>
+                                <div class="subheading mb-3">Key Accomplishments</div>
+                                <ul>
+                                    <li>
+                                        Data were collected from Inside Airbnb for over 3800 Airbnb listings in the Boston Area in 2023 with 75 features provided for each listing.
+                                    </li>
+                                    <li>
+                                        A feature simulating distances of each listing the nearest subway station was created by using <b>web scraping</b> and the <b>Google Geocoding API</b>.
+                                    </li>
+                                    <li>
+                                        Additional features were engineered which used <b>Natural Language Processing (NLP)</b> Techniques to examine descriptive text columns.
+                                    </li>
+                                    <li>
+                                        The correlation coefficients between all features and listing price were used to select the best features on which to train the model.
+                                    </li>
+                                    <li>
+                                        Seven different regression models were run, and the best models were optimized using grid searching.  <b>Principal Component Analysis (PCA)</b> was also attempted to reduce dimensionality and improve price predictions.
+                                    </li>
+                                    <li>
+                                        A simple recommender employing <b>cosine similarity</b> was created to find listings most-similar to simulated user-inputs
+                                    </li>
+                                </ul>
+                                <div class="subheading mb-3">Key Outcomes</div>
+                                <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/best_model_outliers_removed.png" width="400/">
+                                <ul>
+                                    <li>
+                                        Models had a large impact on the model performance with the best models initially achieving a root mean squared error (RMSE) of $389 and an R-Squared value of 0.09 on validation data.
+                                    </li>
+                                    <li>
+                                        Performance improved drastically by removing listings with prices below the 5th percentile and above the 95th percentile to an <b>RMSE of $49</b> and an <b>R-Squared value of 0.68</b>.
+                                    </li>
+                                    <li>
+                                        The best performing model was a <b>random forest regressor</b>.
+                                    </li>
+                                    <li>
+                                        A recommender was capable of correctly recommending listings which met the input criteria.
+                                    </li>
+                                </ul>
+                            </details>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">

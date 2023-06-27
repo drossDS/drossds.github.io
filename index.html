@@ -209,18 +209,79 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Detemining the Severity of Alzheimer's Disease from MRI Images</h3>
-                            
                             <p>Built image classification models employing both convolutional and pre-trained neural network models to classify the severity of Alzheimer’s disease in MRI images. The model achieved an accuracy of 71% across four severity classes and improved upon the null model accuracy of 50%.  A second binary classification model was developed focusing on detecting very early stages of dementia by training on only two severity classes, achieving an accuracy of 81%, an improvement over the null model accuracy of 59%.</p>
+                            <img style="float: left; margin: 0px 0px 00px 20px;" src="assets/img/average_brain_scans_good.png" width="800/">
+                            <br><br><br><br><br><br><br><br><br><br><br><br>
                             <a href="https://github.com/drossDS/Alzheimers_Brain_Scan_Classification">Click here to see the code!</a>
                             <br><br>
-                            <img style="float: left; margin: 0px 0px 00px 20px;" src="assets/img/average_brain_scans_good.png" width="800/">
+                            <details>
+                                <summary>
+                                    <b><u>...Or click here to expand a brief summary!</u></b>
+                                </summary>
+                                <br>
+                                <div class="subheading mb-3">Key Accomplishments</div>
+                                <ul>
+                                    <li>
+                                        Exploratory data analysis (EDA) was performed on images of MRI brain scans obtained from Kaggle.  The images were part of four unbalanced classes of dementia severity including “no dementia”, “very mild dementia”, “mild dementia”, and “moderate dementia”.
+                                    </li>
+                                    <li>
+                                        Manually built convolutional neural network (CNN) models were attempted prior to implementing pre-trained image classification models.
+                                    </li>
+                                    <li>
+                                        Binary classification models focusing on improving early detection were created by training some of the previous models exclusively on the no dementia and very mild dementia classes.
+                                    </li>
+                                </ul>
+                                <div class="subheading mb-3">Key Outcomes</div>
+                                <ul>
+                                    <li>
+                                        The best model trained on all four dementia classes was the Inception v3 pre-trained achieving an overall accuracy of 71%, outperforming the null model accuracy of 50%.
+                                    </li>
+                                    <li>
+                                        The best early detection binary classification model trained was an optimized CNN model achieving an overall accuracy of 81%, outperforming the binary null model accuracy of 59%.
+                                    </li>
+                                </ul>
+                            </details>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Identifying Humor with Language Models</h3>
-                            <p>Created classification models employing natural language processing to categorize news article titles web-scraped from the ‘World News” and “The Onion” subreddits with an accuracy of 86.0% on unseen data.</p>
+                            <br>
+                            <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/word_counts_cvec_nsw.png" width="500/">
+                            <p>Created classification models employing natural language processing to categorize news article titles web scraped from the r/worldnews and r/TheOnion subreddits. Regular expressions were used to clean the data, removing errors and subreddit identifiers in the titles.  A variety of classification models were attempted and evaluated. The best performing model was a stacking classifier with an accuracy of 86.0% on unseen data.</p>
                             <a href="https://github.com/drossDS/Humor_Identification_with_NLP">Click here to see the code!</a>
+                            <br><br>
+                            <details>
+                                <summary>
+                                    <b><u>...Or click here to expand a brief summary!</u></b>
+                                </summary>
+                                <br>
+                                <div class="subheading mb-3">Key Accomplishments</div>
+                                <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/NLP_model_flow_chart.png" width="400/">
+                                <ul>
+                                    <li>
+                                        The Pushshift API was used to collect a total of approximately 6000 news article titles from both the r/worldnews and r/TheOnion subreddits.
+                                    </li>
+                                    <li>
+                                        Natural language processing (NLP) techniques such as tokenization, stop word removal, and sentiment analysis were employed as pre-modeling and exploratory data analysis (EDA) steps.
+                                    </li>
+                                    <li>
+                                        Of seven different classification models initially attempted, the three best models were selected for hyperparameter tuning (optimization) using grid searching.
+                                    </li>
+                                    <li>
+                                        The three best optimized models were then incorporated into a stacking classifier ensemble model - using a logistic regression model as the final estimator - to produce the best results.
+                                    </li>
+                                </ul>
+                                <div class="subheading mb-3">Key Outcomes</div>
+                                <ul>
+                                    <li>
+                                        The final model achieved an accuracy of 86% on unseen data, 89% on testing data, and 99.99% on the training data. This is an improvement over the null model accuracy of approximately 51%.
+                                    </li>
+                                    <li>
+                                        It was speculated that the differing subject matter of the two subreddits was likely the reason for such a high accuracy and not due to the model’s ability to correctly identify humor.
+                                    </li>
+                                </ul>
+                            </details>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">

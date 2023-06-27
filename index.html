@@ -157,7 +157,7 @@
                             <h3 class="mb-0"><u>Boston Airbnb Fair Pricing Tool and Recommender</u></h3>
                             <br>
                             <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/best_model_outliers_removed.png" width="400/">
-                            <p>Developed a machine learning pricing model with integrated recommender system to estimate Boston Airbnb listing prices based on user inputs.  Pricing model achieved a root mean squared error of $49 and R-Squared value of 0.68 on validation data.</p>
+                            <p>Developed a pricing model to estimate Boston Airbnb listing prices. Used web scraping, APIs, and natural language processing (NLP) techniques to engineer features. Implemented a recommender system using cosine similarity to suggest listings based on user inputs. The pricing model outperformed the null model by reducing the root mean squared error from $86 to $49 and achieved an R-Squared value of 0.68 on validation data with outliers removed.</p>
                             <a href="https://github.com/drossDS/Air_BnB_Fair_Pricing_Improved">Click here to see the code!</a>
                             <br><br>
                             <!-- Source:  https://dev.to/jordanfinners/creating-a-collapsible-section-with-nothing-but-html-4ip9-->
@@ -172,7 +172,7 @@
                                         Data were collected from Inside Airbnb for over 3800 Airbnb listings in the Boston Area in 2023 with 75 features provided for each listing.
                                     </li>
                                     <li>
-                                        A feature simulating distances of each listing the nearest subway station was created by using <b>web scraping</b> and the <b>Google Geocoding API</b>.
+                                        A feature to simulate the distance of each listing to Boston subway stations was created by <b>web scraping</b> station addresses from the Massachusetts Bay Transit Authority (MBTA) website before using the <b>Google Geocoding API</b> to return latitude and longitude coordinates for each listing.
                                     </li>
                                     <li>
                                         Additional features were engineered which used <b>Natural Language Processing (NLP)</b> Techniques to examine descriptive text columns.
@@ -194,7 +194,7 @@
                                         Models had a large impact on the model performance with the best models initially achieving a root mean squared error (RMSE) of $389 and an R-Squared value of 0.09 on validation data.
                                     </li>
                                     <li>
-                                        Performance improved drastically by removing listings with prices below the 5th percentile and above the 95th percentile to an <b>RMSE of $49</b> and an <b>R-Squared value of 0.68</b>.
+                                        Performance improved drastically by removing listings with prices below the 5th percentile and above the 95th percentile to an <b>RMSE of $49</b> and an <b>R-Squared value of 0.68.</b> This is an improvement over the null model’s RMSE of $86 with outliers removed.
                                     </li>
                                     <li>
                                         The best performing model was a <b>random forest regressor</b>.
@@ -210,10 +210,10 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Detemining the Severity of Alzheimer's Disease from MRI Images</h3>
                             
-                            <p> Employed both convolutional and pre-trained neural network models to classify the severity of Alzheimer’s disease in MRI images. The model achieved an accuracy of 71% across four severity classes.</p>
+                            <p>Built image classification models employing both convolutional and pre-trained neural network models to classify the severity of Alzheimer’s disease in MRI images. The model achieved an accuracy of 71% across four severity classes and improved upon the null model accuracy of 50%.  A second binary classification model was developed focusing on detecting very early stages of dementia by training on only two severity classes, achieving an accuracy of 81%, an improvement over the null model accuracy of 59%.</p>
                             <a href="https://github.com/drossDS/Alzheimers_Brain_Scan_Classification">Click here to see the code!</a>
                             <br><br>
-                            <img style="float: left; margin: 0px 0px 00px 20px;" src="assets/img/Brain_images_for_each_class.png" width="800/">
+                            <img style="float: left; margin: 0px 0px 00px 20px;" src="assets/img/average_brain_scans_good.png" width="800/">
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">

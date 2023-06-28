@@ -328,9 +328,40 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Carbon Emissions Forecasting</h3>
-                            <p>Forecasted carbon emissions levels using historical data in Python by optimizing time series regression models resulting in a model with an estimated mean absolute error of 3%.</p>
+                            <h3 class="mb-0"><u>Carbon Emissions Forecasting</u></h3>
+                            <br>
+                            <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/Provided_NNEIEUS_Data.PNG" width="450/">
+                            <p>Forecasted carbon emissions levels from natural gas electric energy production one year beyond the provided historical time series data. Optimized a variety of autoregression analysis models with hyperparameter tuning, selected the type of transformation for the training data, and chose the optimal time span of historical data to be used to train the model. The best model achieved an estimated mean absolute percent error of 3%.</p>
                             <a href="https://github.com/drossDS/Forecasting_Carbon_Emissions">Click here to see the code!</a>
+                            <br><br>
+                            <details>
+                                <summary>
+                                    <b><u>...Or click here to expand a brief summary!</u></b>
+                                </summary>
+                                <br>
+                                <div class="subheading mb-3">Key Accomplishments</div>
+                                <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/Carbon_Emissions_Forecast.PNG" width="450/">
+                                <ul>
+                                    <li>
+                                        Monthly carbon emissions data were provided for natural gas emissions data between 1973 and 2016.
+                                    </li>
+                                    <li>
+                                        Different data transformation techniques were evaluated to optimize model performance and various training data time spans were examined to reduce prediction error and determine how much of the provided training data should be used to train the model.
+                                    </li>
+                                    <li>
+                                        AR, MA, ARMA, ARIMA, and SARIMA models were optimized and evaluated.
+                                    </li>
+                                </ul>
+                                <div class="subheading mb-3">Key Outcomes</div>
+                                <ul>
+                                    <li>
+                                        A SARIMA model was chosen as the best performing model.
+                                    </li>
+                                    <li>
+                                        Carbon emissions levels were forecasted for 12 months beyond the provided data within an estimated mean absolute percent error (MAPE) of 3% based on the validation dataset.
+                                    </li>
+                                </ul>
+                            </details>
                         </div>
                     </div>
                 </div>

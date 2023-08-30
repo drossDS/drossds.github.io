@@ -179,7 +179,23 @@
                             <h3 class="mb-0">Boston Airbnb Fair Pricing Tool and Recommender</h3>
                             <br>
                             <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/best_model_outliers_removed.png" width="350/">
-                            <p>Developed a pricing regression model to estimate Boston Airbnb listing prices. Used web scraping, APIs, and natural language processing (NLP) techniques to engineer features. Implemented a recommender system using cosine similarity to suggest listings based on user inputs. The pricing model outperformed the null model by reducing the root mean squared error from $86 to $49 and achieved an R-Squared value of 0.68 on validation data with outliers removed.</p>
+                            <ul>
+                                <li>
+                                    <b><u><i>Goal:</i></u></b>  Create a tool for listers and guests to determine a fair Airbnb listing price based on desired criteria.
+                                </li>
+                                <li>
+                                    Developed a regression model to estimate Boston Airbnb listing prices from nearly 3,500 listings
+                                </li>
+                                <li>
+                                    Used web scraping, APIs, and natural language processing (NLP) to engineer 12,500 additional features
+                                </li>
+                                <li>
+                                    Implemented a recommender system using cosine similarity to suggest listings based on user inputs. 
+                                </li>
+                                <li>
+                                    <b><u><i>Conclusion:</i></u></b> The best model was a random forest regressor achieving an R-squared value of 0.68 on validation data with outliers removed. The recommender produced results consistent with input criteria
+                                </li>
+                            </ul>
                             <a href="https://github.com/drossDS/Air_BnB_Fair_Pricing_Improved" target="blank">Click here to see the code in a new tab!</a>
                             <br><br>
                             <!-- Source:  https://dev.to/jordanfinners/creating-a-collapsible-section-with-nothing-but-html-4ip9-->
@@ -191,7 +207,7 @@
                                 <div class="subheading mb-3">Key Accomplishments</div>
                                 <ul>
                                     <li>
-                                        Data were collected from Inside Airbnb for over 3800 Airbnb listings in the Boston Area in 2023 with 75 features provided for each listing.
+                                        Data were collected from Inside Airbnb for over 3800 Airbnb listings in the Boston Area in 2023 with 75 features provided for each listing.  Nearly 3500 listings were ultimately used in the model for training and validation.
                                     </li>
                                     <li>
                                         A feature to simulate the distance of each listing to Boston subway stations was created by <b>web scraping</b> station addresses from the Massachusetts Bay Transit Authority (MBTA) website before using the <b>Google Geocoding API</b> to return latitude and longitude coordinates for each listing.
@@ -233,7 +249,20 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Determining the Severity of Alzheimer's Disease from MRI Images</h3>
                             <br>
-                            <p>Built image classification models employing both convolutional and pre-trained neural network models to classify the severity of Alzheimer’s disease in MRI images. The model achieved an accuracy of 71% across four severity classes and improved upon the null model accuracy of 50%.  A second binary classification model was developed to focus on detecting very early stages of dementia by training on only two severity classes.  The binary model achieved an accuracy of 81%, an improvement of 22% over the null model accuracy of 59%.</p>
+                            <ul>
+                                <li>
+                                    <b><u><i>Goal:</i></u></b> Classify MRI images into four classes of Alzheimer’s (dementia) severity, and determine if a binary classification model improves the early detection of the least-severe class using a 6400 image dataset.
+                                </li>
+                                <li>
+                                    Employed both convolutional and pre-trained neural networks in multiclass and binary classification models.
+                                </li>
+                                <li>
+                                    Used image augmentation and model regularization techniques. Compensated for imbalanced classes.
+                                </li>
+                                <li>
+                                    <b><u><i>Conclusion:</i></u></b> The multiclass model's accuracy was 71% versus the binary model’s 81%. Both achieved similar recall values for the least severe dementia class at 0.77 and 0.78. Early detection was not improved
+                                </li>
+                            </ul>
                             <img style="float: left; margin: 0px 0px 00px 20px;" src="assets/img/average_brain_scans_good.png" width="800/">
                             <br><br><br><br><br><br><br><br><br><br><br><br>
                             <a href="https://github.com/drossDS/Alzheimers_Brain_Scan_Classification" target="blank">Click here to see the code in a new tab!</a>
@@ -273,7 +302,20 @@
                             <h3 class="mb-0">Identifying Humor with Language Models</h3>
                             <br>
                             <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/word_counts_cvec_nsw.png" width="500/">
-                            <p>Created classification models employing natural language processing to categorize news article titles collected from the r/worldnews and r/TheOnion subreddits using the Pushshift API. Regular expressions were used to clean the data, removing errors and subreddit identifiers in the titles.  A variety of classification models were attempted and evaluated. The best-performing model was a stacking classifier with an accuracy of 86.0% on unseen data.</p>
+                            <ul>
+                                <li>
+                                    <b><u><i>Goal:</i></u></b>  Determine if Natural Language Processing (NLP) techniques can build models that detect humor
+                                </li>
+                                <li>
+                                    Collected 12,000+ article titles from the r/worldnews and r/TheOnion subreddits using the Pushshift API.
+                                </li>
+                                <li>
+                                    Regular expressions were used to clean the data and multiple classification models employing NLP techniques were created to determine the subreddit (humorous or not) to which the titles belonged.
+                                </li>
+                                <li>
+                                    <b><u><i>Conclusion:</i></u></b> Though a stacking classifier achieved the best accuracy of 86.0% on unseen data, word-count analysis determined this was likely due to the subject matter of each subreddit reflected in the article titles.
+                                </li>
+                            </ul>
                             <a href="https://github.com/drossDS/Humor_Identification_with_NLP" target="blank">Click here to see the code in a new tab!</a>
                             <br><br>
                             <details>

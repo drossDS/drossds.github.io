@@ -260,7 +260,7 @@
                                     Used image augmentation and model regularization techniques. Compensated for imbalanced classes.
                                 </li>
                                 <li>
-                                    <b><u><i>Conclusion:</i></u></b> The multiclass model's accuracy was 71% versus the binary model’s 81%. Both achieved similar recall values for the least severe dementia class at 0.77 and 0.78. Early detection was not improved
+                                    <b><u><i>Conclusion:</i></u></b> The multiclass model's accuracy was 71% versus the binary model’s 81%. Both achieved similar recall values for the least severe dementia class at 0.77 and 0.78. Early detection was not improved.
                                 </li>
                             </ul>
                             <img style="float: left; margin: 0px 0px 00px 20px;" src="assets/img/average_brain_scans_good.png" width="800/">
@@ -287,10 +287,13 @@
                                 <div class="subheading mb-3">Key Outcomes</div>
                                 <ul>
                                     <li>
-                                        The best model trained on all four dementia classes was the Inception v3 pre-trained model achieving an overall accuracy of 71%, outperforming the null model accuracy of 50%.
+                                        The best model trained on all four dementia classes was the Inception v3 pre-trained model achieving an overall accuracy of 71%, outperforming the null model accuracy of 50%.  This multiclass model achieved a recall value of 0.77 for the “very mild dementia” class.
                                     </li>
                                     <li>
-                                        The best early detection binary classification model trained was an optimized CNN model achieving an overall accuracy of 81%, outperforming the binary null model accuracy of 59%.
+                                        The best early detection binary classification model trained was an optimized CNN model achieving an overall accuracy of 81%, outperforming the binary null model accuracy of 59%.  This binary model achieved a recall value of 0.78 for the “very mild dementia” class.
+                                    </li>
+                                    <li>
+                                        With recall values being nearly identical, it cannot be concluded that a binary classification model is more capable of detecting early stages of dementia than a multiclass model, and early detection is not improved.
                                     </li>
                                 </ul>
                             </details>

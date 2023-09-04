@@ -58,7 +58,7 @@
                         <a href="mailto:drossetti12@gmail.com">drossetti12@gmail.com</a>
                     </div>
                     <p class="lead mb-5">I'm a data scientist who enjoys building machine learning models that serve as impactful business tools. As a former mechanical engineer, I bring a rigorous approach to problem-solving, a strong mathematical intuition, and the ability to bridge theoretical concepts with real-world applications. Using these skills, I plan to develop practical solutions that positively impact our world. </p>
-                    <p class="lead mb-5">Currently Reading:  <i>An Introduction to Statistical Learning with Applications in Python</i> <br> Current Project(s):  <i>The Opportinity Project (TOP)</i> and volunteering with <i>The Davies Project</i> through INFORMS Pro Bono Analytics</p>
+                    <p class="lead mb-5">Currently Reading:  <i>An Introduction to Statistical Learning with Applications in Python</i> <br> Current Project(s): Volunteering with <i>The Davies Project</i> through INFORMS Pro Bono Analytics</p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/dan-rossetti/" target="blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/drossDS" target="blank"><i class="fab fa-github"></i></a>
@@ -275,10 +275,10 @@
                                 <div class="subheading mb-3">Key Accomplishments</div>
                                 <ul>
                                     <li>
-                                        Exploratory data analysis (EDA) was performed on 6400 images of MRI brain scans obtained from Kaggle.  The images were presorted into four unbalanced classes of dementia severity including “no dementia”, “very mild dementia”, “mild dementia”, and “moderate dementia”.
+                                        <b>Exploratory data analysis (EDA)</b> was performed on 6400 images of MRI brain scans obtained from Kaggle.  The images were presorted into four <b>unbalanced classes</b> of dementia severity including “no dementia”, “very mild dementia”, “mild dementia”, and “moderate dementia”.
                                     </li>
                                     <li>
-                                        Manually built convolutional neural network (CNN) models were attempted prior to implementing pre-trained image classification models.
+                                        Manually built <b>convolutional neural network (CNN)</b> models were attempted prior to implementing pre-trained image classification models.
                                     </li>
                                     <li>
                                         Binary classification models focusing on improving early detection were created by training some of the previous models exclusively on the "no dementia" and "very mild dementia" classes.
@@ -287,10 +287,10 @@
                                 <div class="subheading mb-3">Key Outcomes</div>
                                 <ul>
                                     <li>
-                                        The best model trained on all four dementia classes was the Inception v3 pre-trained model achieving an overall accuracy of 71%, outperforming the null model accuracy of 50%.  This multiclass model achieved a recall value of 0.77 for the “very mild dementia” class.
+                                        The best model trained on all four dementia classes was the <b>Inception v3 pre-trained model</b> achieving an overall accuracy of 71%, outperforming the null model accuracy of 50%.  This multiclass model achieved a <b>recall value</b> of 0.77 for the “very mild dementia” class.
                                     </li>
                                     <li>
-                                        The best early detection binary classification model trained was an optimized CNN model achieving an overall accuracy of 81%, outperforming the binary null model accuracy of 59%.  This binary model achieved a recall value of 0.78 for the “very mild dementia” class.
+                                        The best early detection binary classification model trained was an optimized CNN model achieving an overall accuracy of 81%, outperforming the binary null model accuracy of 59%.  This binary model achieved a <b>recall value</b> of 0.78 for the “very mild dementia” class.
                                     </li>
                                     <li>
                                         With recall values being nearly identical, it cannot be concluded that a binary classification model is more capable of detecting early stages of dementia than a multiclass model, and early detection is not improved.
@@ -330,16 +330,16 @@
                                 <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/nlp_model_flow_chart_.jpg" width="400/">
                                 <ul>
                                     <li>
-                                        The Pushshift API was used to collect approximately 6000 news article titles from both the r/worldnews and r/TheOnion subreddits.
+                                        The <b>Pushshift API</b> was used to collect approximately 6000 news article titles from both the r/worldnews and r/TheOnion subreddits.
                                     </li>
                                     <li>
-                                        Natural language processing (NLP) techniques such as tokenization, stop word removal, and sentiment analysis were employed as pre-modeling and exploratory data analysis (EDA) steps.
+                                        <b>Natural language processing (NLP)</b> techniques such as <b>tokenization, stop word removal, and sentiment analysis</b> were employed as pre-modeling and exploratory data analysis (EDA) steps.
                                     </li>
                                     <li>
-                                        Of seven different classification models initially attempted, the three best models were selected for hyperparameter tuning (optimization) using grid searching.
+                                        Of seven different classification models initially attempted, the three best models were selected for <b>hyperparameter tuning (optimization) using grid searching</b>.
                                     </li>
                                     <li>
-                                        The three best-optimized models were then incorporated into a stacking classifier ensemble model (using a logistic regression model as the final estimator) to produce the best results.
+                                        The three best-optimized models were then incorporated into a <b>stacking classifier ensemble model</b> (using a <b>logistic regression model</b> as the final estimator) to produce the best results.
                                     </li>
                                 </ul>
                                 <div class="subheading mb-3">Key Outcomes</div>
@@ -382,22 +382,22 @@
                                 <img style="float: right; margin: 0px 0px 0px 20px;" src="assets/img/correlation_matrix.JPG" width="500/">
                                 <ul>
                                     <li>
-                                        Features were selected based both on their correlations to the home price and common knowledge of important home characteristics that would influence the sale price or value.
+                                        Features were selected based both on their <b>correlation coefficients</b> with respect to the home price and common knowledge of important home characteristics that would influence the sale price or value.
                                     </li>
                                     <li>
-                                        Different sets of features were run through a linear regression model to find features that would produce the best model performance.
+                                        Different sets of features were run through a <b>linear regression model</b> to find features that would produce the best model performance.
                                     </li>
                                     <li>
-                                        Interaction terms and polynomial feature transforms were created and included in the prediction model based on their correlations to price.
+                                        <b>Interaction terms</b> and <b>polynomial feature transforms</b> were created and included in the prediction model based on their correlations to price.
                                     </li>
                                     <li>
-                                        Regularization techniques were attempted to improve model performance.
+                                        <b>Regularization</b> techniques were attempted to improve model performance.
                                     </li>
                                 </ul>
                                 <div class="subheading mb-3">Key Outcomes</div>
                                 <ul>
                                     <li>
-                                        The final model that was selected was trained on a dataset that included polynomial features with a mean absolute error of $18,643 - well within the $30,000 goal - and an improvement on the null model RMSE of $78,827.
+                                        The final model that was selected was trained on a dataset that included polynomial features with a <b>mean absolute error</b> of $18,643 - well within the $30,000 goal - and an improvement on the null model RMSE of $78,827.
                                     </li>
                                     <li>
                                         Regularization methods produced a slight reduction in model performance with increases in the RMSE below or around 1% of the RMSE from the non-regularized model.
@@ -440,10 +440,10 @@
                                         Monthly carbon emissions data were provided for natural gas emissions data between 1973 and 2016.
                                     </li>
                                     <li>
-                                        Different data transformation techniques were evaluated to optimize model performance and various training data time spans were examined to reduce prediction error and determine how much of the provided training data should be used to train the model.
+                                        Different <b>data transformation techniques</b> were evaluated to optimize model performance and various training data time spans were examined to reduce prediction error and determine how much of the provided training data should be used to train the model.
                                     </li>
                                     <li>
-                                        AR, MA, ARMA, ARIMA, and SARIMA models were optimized and evaluated.
+                                        <b>AR, MA, ARMA, ARIMA,</b> and <b>SARIMA</b> models were optimized and evaluated.
                                     </li>
                                 </ul>
                                 <div class="subheading mb-3">Key Outcomes</div>
@@ -452,7 +452,7 @@
                                         A SARIMA model was chosen as the best-performing model.
                                     </li>
                                     <li>
-                                        Carbon emissions levels were forecasted for 12 months beyond the provided data within an estimated mean absolute percent error (MAPE) of 3% based on the validation dataset.
+                                        Carbon emissions levels were forecasted for 12 months beyond the provided data within an estimated <b>mean absolute percent error (MAPE)</b> of 3% based on the validation dataset.
                                     </li>
                                 </ul>
                             </details>
